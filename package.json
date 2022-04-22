@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "not yet"
+    "url": "git+https://github.com/markschwartzkopf/pjlink-control.git"
   },
   "author": "Mark Schwartzkopf",
   "license": "GPL-3.0",
