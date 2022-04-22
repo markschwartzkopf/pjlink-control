@@ -1,0 +1,21 @@
+{
+  "name": "pjlink-control",
+  "version": "1.0.0",
+  "description": "Control for PJLink projectors",
+  "main": "dist/index.js",
+  "scripts": {
+    "watch:ts": "node ./node_modules/typescript/bin/tsc -p ./src --diagnostics --watch",
+    "build:ts": "node ./node_modules/typescript/bin/tsc -p ./src --diagnostics"
+  },
+  "repository": {
+    "type": "git",
+    "url": "not yet"
+  },
+  "author": "Mark Schwartzkopf",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.25",
+    "typescript": "^4.6.3"
+  }
+}
