@@ -10,8 +10,8 @@ const Projector = require('pjlink-control').default; //JavaScript
 
 let panasonic1 = new Projector("172.19.1.137", "panasonic", () => {
   console.log("connected");
-  test.power('on').then(() => {
-    return test.getInput()
+  panasonic1.power('on').then(() => {
+    return panasonic1.getInput()
   }).then((val) => {
     console.log('Input "' + val + '" active');
   })
