@@ -114,7 +114,6 @@ export default class Projector {
       let ending = false;
       let socket = new net.Socket();
       socket.on('data', (buf) => {
-        console.log('DATA: ' + buf.toString());
         if (buf.slice(0, 9).toString() == 'PJLINK 1 ') {
           //return password encypted with 8 character random string supplied by the projector
           socket.write(
