@@ -15,7 +15,7 @@ export default class Projector {
   private _info: string | null = null;
   private _class: string | null = null;
   private _initialized = false;
-  constructor(url: string, password: string, cb: () => void, port?: number) {
+  constructor(url: string, password: string, cb?: () => void, port?: number) {
     this.url = url;
     if (port == undefined) {
       this.port = defaultPort;
@@ -41,7 +41,7 @@ export default class Projector {
       .then((clas) => {
         this._class = clas;
         this._initialized = true;
-        cb();
+        if (cb) cb();
       })
       .catch((err) => {
         console.error('Projector initialization error:' + JSON.stringify(err));
